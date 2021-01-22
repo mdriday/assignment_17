@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    margin-bottom: 250px;
+}
+.main-menu{
+    background-color: black;
+   
+}
+.main-menu ul{
+    text-align: center;
+}
+.main-menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: -4px;
+}
+.main-menu ul li a {
+	display: inline-block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 600;
+	transition: .6s;
+	padding: 10px 20px 30px;
+}
+.main-menu ul li a:hover{
+   
+    background-color: #009432;
+}
+
+/* deopdwon menu */
+.main-menu ul li{
+    position: relative;
+    margin-left: 0;
+}
+.main-menu ul li ul{
+position: absolute;
+top: 100%;
+left: 0;
+width: 200px;
+background-color:black;
+transform: scaleY(0);
+visibility: hidden;
+opacity: 0;
+transition: 1s;
+}
+.main-menu ul li ul li{
+     display: block;
+     
+}
+.main-menu ul li:hover ul{
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0;
+}
+.main-menu ul li ul li a{
+    display: block;
+    border-bottom: 1px solid #dddddd;
+}
+.main-menu ul li ul li:first-child{
+    border-top: 4px solid #1289A7;
+}
+
+
+/* sub menu */
+.sub-menu{
+   opacity: 0;
+   visibility: hidden;
+}
+.main-menu ul li ul li{
+    position: relative;
+    transform-origin: top center;
+    /* transform: scaleY(0); */
+}
+.main-menu ul li ul li:hover .sub-menu{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+    /* transform: scaleY(1); */
+}
+
+/* banner Section */
+.banner-section{
+    background-image: url(https://wallpaperaccess.com/full/2667331.jpg);
+    height: 500px;
+}
+.contant{
+    text-align: center;
+}
+.banner-section h1 {
+	background: #fff;
+	display: inline-block;
+	margin-top: 200px;
+	padding: 10px 34px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.contant h2 {
+	display: block;
+	background: #fff;
+	padding: 10px 0;
+	margin: 0 50px;
+}
+.contant a {
+	background: black;
+	margin-top: 25px;
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 5px;
+	transition: .6s;
+	font-size: 22px;
+	font-weight: 600;
+	border: 1px solid #eee;
+}
+    .contant a:hover {
+        background-color: #ffffff;
+        color: black;
+        text-shadow: 4px 2px 11px #e84118;
+        border-radius: 5px;
+    }
+
+
+/* footer0 */
+.footer-section {
+	background: #222f3e;
+	padding: 20px 0;
+	text-align: center;
+}
+p {
+	color: #fff;
+	font-size: 20px;
+}
+.footer-icon a {
+	background: #00a8ff;
+	display: inline-block;
+	border-radius: 50%;
+	color: #f5f6fa;
+	margin-top: 23px;
+	margin-left: 10px;
+	border: 1px solid #eee;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.footer-icon a:hover {
+	box-sizing: content-box;
+	box-shadow: 2px 3px 7px #e84118;
+    background: #fff;
+    color: brown;
+	
+}
